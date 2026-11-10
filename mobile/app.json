@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Nutrici-IA",
+    "slug": "nutrici-ia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "O Nutrici-IA precisa acessar a câmera para escanear os códigos de barra dos alimentos."
+      }
+    },
+    "android": {
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.INTERNET"
+      ],
+      "usesCleartextTraffic": true
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "O Nutrici-IA precisa acessar a câmera para escanear os códigos de barra dos alimentos."
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}
